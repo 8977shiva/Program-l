@@ -1,19 +1,13 @@
-class User{
-     constructor(firstname,lastname,age)
-     {
-         this.firstname=firstname;
-         this.lastname=lastname;
-         this.age=age;
-     }
-     
- }
- class User1 extends User{
-      constructor(firstname,lastname,age){
-          super(firstname,lastname,age)
-
+ function fibonacci(n){
+  var fib1=0;
+  var fib2=1;
+  var fib;
+      for(var i=2;i<n;i++){
+       fib=fib1+fib2;
+       console.log(fib);
+       fib1=fib2;
+       fib2=fib;   
       }
- }
-
- const ram= new User1("ram", "shiva", 21)
-
-  console.log( "hello i am "+ram.firstname+" "+ram.lastname+" "+ram.age+" year old"+"i");
+     
+  }
+  fibonacci(10);
