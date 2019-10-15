@@ -19,3 +19,11 @@
 // const a=10;
 // a=12
 // console.log(a)
+
+//for-of-loop
+//  let  sum=0;
+//  for(let number of[1,2,3]){
+//      sum+=number;
+//      console.log(sum)
+
+//  }
