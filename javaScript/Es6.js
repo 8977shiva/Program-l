@@ -27,3 +27,27 @@
 //      console.log(sum)
 
 //  }
+
+//spread and rest 
+// rest
+var sum;
+ function sumOfArrays( ...array){
+        return array.reduce((a,b)=> a+b); 
+
+ }
+ console.log(sumOfArrays(1,3))
+
+ // spread 
+ let array1=[1,2,3,4,5];
+ let array2 = [6,7,8,9]
+ array1=[...array1, ...array2]
+console.log(array1)
+
+// eg-2
+function sum(x, y, z) {
+    return x + y + z;
+  }
+  
+  const numbers = [1, 2, 3,4];
+  
+  console.log(sum(...numbers));
