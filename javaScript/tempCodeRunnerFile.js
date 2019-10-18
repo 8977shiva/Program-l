@@ -1,7 +1,2 @@
-function sum(x, y, z) {
-    return x + y + z;
-  }
-  
-  const numbers = [1, 2, 3,4];
-  
-  console.log(sum(...numbers));
+var p = new Promise((reslove,reject)=>reslove('hi'), reject('hello'))
+p.then((h)=>console.log('this is reslove')).catch((h)=> console.log('this is catch'))

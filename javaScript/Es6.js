@@ -30,24 +30,41 @@
 
 //spread and rest 
 // rest
-var sum;
- function sumOfArrays( ...array){
-        return array.reduce((a,b)=> a+b); 
+// var sum;
+//  function sumOfArrays( ...array){
+//         return array.reduce((a,b)=> a+b); 
 
- }
- console.log(sumOfArrays(1,3))
+//  }
+//  console.log(sumOfArrays(1,3))
 
- // spread 
- let array1=[1,2,3,4,5];
- let array2 = [6,7,8,9]
- array1=[...array1, ...array2]
-console.log(array1)
+//  // spread 
+//  let array1=[1,2,3,4,5];
+//  let array2 = [6,7,8,9]
+//  array1=[...array1, ...array2]
+// console.log(array1)
 
-// eg-2
-function sum(x, y, z) {
-    return x + y + z;
-  }
+// // eg-2
+// function sum(x, y, z) {
+//     return x + y + z;
+//   }
   
-  const numbers = [1, 2, 3,4];
+//   const numbers = [1, 2, 3,4];
   
-  console.log(sum(...numbers));
+//   console.log(sum(...numbers));
+
+var promise1 = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve('foo');
+    }, 300);
+  });
+  
+  promise1.then(function(value) {
+    console.log(value);
+    // expected output: "foo"
+  });
+  
+  console.log(promise1);
+
+
+  var p = new Promise((reslove,reject)=>reslove('hi'), reject('hello'))
+p.then((h)=>console.log('this is reslove')).catch((h)=> console.log('this is catch'))
