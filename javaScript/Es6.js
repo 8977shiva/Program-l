@@ -52,19 +52,20 @@
   
 //   console.log(sum(...numbers));
 
-var promise1 = new Promise(function(resolve, reject) {
-    setTimeout(function() {
-      resolve('foo');
-    }, 300);
-  });
+// var promise1 = new Promise(function(resolve, reject) {
+//     setTimeout(function() {
+//       resolve('foo');
+//     }, 300);
+//   });
   
-  promise1.then(function(value) {
-    console.log(value);
-    // expected output: "foo"
-  });
+//   promise1.then(function(value) {
+//     console.log(value);
+//     // expected output: "foo"
+//   });
   
-  console.log(promise1);
+//   console.log(promise1);
 
 
-  var p = new Promise((reslove,reject)=>reslove('hi'), reject('hello'))
-p.then((h)=>console.log('this is reslove')).catch((h)=> console.log('this is catch'))
+//   var p = new Promise((reslove,reject)=>reslove('hi'), reject('hello'))
+// p.then((h)=>console.log('this is reslove')).catch((h)=> console.log('this is catch'))
+
