@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+header{
+     background-color: red;
+    
+}
+ul{
+    text-align: right;
+}
+
+section{
+     text-align: center;
+}
+li{
+    display:inline;
+}
+h2 {
+    color: red;
+    text-align:  inherit;
+    border: 4px  red Double;
+}
+p:hover{
+    background-color: white;
+}
+
+.list{
+     text-align: left;
+
+}
+.list1:first-child{
+    color: red;
+    text-align:  inherit;
+    border: 4px  red Double;
+}
